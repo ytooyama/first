@@ -1,0 +1,10 @@
+# このファイルはテスト先のGitLabでCI/CDするためのものです。
+#
+stages:
+  - test
+
+test_job:
+  script:
+    - python3.9 test.py
+  tags:
+    - gpurunner
