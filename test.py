@@ -8,4 +8,4 @@ a = current_year - 1981
 
 #結果表示
 print('今年は', current_year, '年')
-print('Aさんは', a, '歳')
+print('Aさんは今年', a, '歳になります')
