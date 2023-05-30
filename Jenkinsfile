@@ -9,13 +9,13 @@ pipeline {
             post {
                 success {
                     slackSend(
-                    message: "成功",
+                    message: "https://github.com/ytooyama/first テスト成功",
                     )
                 }
                 failure {
                     slackSend(
                     color: "#FF0000",
-                    message: "失敗",
+                    message: "https://github.com/ytooyama/first テスト失敗",
                     )
                 }
             }
