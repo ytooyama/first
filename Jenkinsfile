@@ -10,15 +10,15 @@ pipeline {
                 success {
                     slackSend(
                     message: "成功",
-                )
+                    )
                 }
                 failure {
                     slackSend(
                     color: "#FF0000",
                     message: "失敗",
-                )
+                    )
                 }
-    }
+            }
         }
     }
 }
