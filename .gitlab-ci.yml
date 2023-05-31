@@ -1,9 +1,16 @@
 # このファイルはテスト先のGitLabでCI/CDするためのものです。
 #
 stages:
-  - test
+  - py38test
+  - py39test
 
-test_job:
+py38test_job:
+  script:
+    - python3.8 test.py
+  tags:
+    - gpurunner
+
+py39test_job:
   script:
     - python3.9 test.py
   tags:
