@@ -9,13 +9,13 @@ pipeline {
             post {
                 success {
                     slackSend(
-                    message: "https://github.com/ytooyama/first py38テスト成功",
+                    message: "py38testは成功 ${env.JOB_NAME} ${env.BUILD_NUMBER} (<${env.BUILD_URL}|Open>)",
                 )
                 }
                 failure {
                     slackSend(
                     color: "#FF0000",
-                    message: "https://github.com/ytooyama/first py38テスト失敗",
+                    message: "py38testは失敗 ${env.JOB_NAME} ${env.BUILD_NUMBER} (<${env.BUILD_URL}|Open>)",
                 )
                 }
             }            
@@ -28,13 +28,13 @@ pipeline {
             post {
                 success {
                     slackSend(
-                    message: "https://github.com/ytooyama/first py39テスト成功",
+                    message: "py39testは成功 ${env.JOB_NAME} ${env.BUILD_NUMBER} (<${env.BUILD_URL}|Open>)",
                 )
                 }
                 failure {
                     slackSend(
                     color: "#FF0000",
-                    message: "https://github.com/ytooyama/first py39テスト失敗",
+                    message: "py39testは失敗 ${env.JOB_NAME} ${env.BUILD_NUMBER} (<${env.BUILD_URL}|Open>)",
                 )
                 }
             }
