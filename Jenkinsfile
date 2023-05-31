@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Tested with python 3.8') {
             steps {
-                sh 'python3.8 /home/jenkins/test1.py'
+                sh 'python3.8 /home/jenkins/test.py'
             }
             post {
                 success {
