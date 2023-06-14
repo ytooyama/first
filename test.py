@@ -4,10 +4,10 @@ from datetime import datetime
 cyear = datetime.now().year
 
 #人を定義
-a = cyear - 1981
+me = cyear - 1981
 dora = cyear - 2012
 
 #結果表示
 print('今年は', cyear, '年')
-print('Aさんは今年', a, '歳')
+print('私は今年', me, '歳')
 print('doraさんは今年', dora, '歳')
